@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import WelcomePage from "./components/WelcomePage/WelcomePage.jsx";
+import WelcomePage from "./components/LandingPage";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           element={
             <>
               <Container fluid>
-                <Row className="mt-3">
+                <Row>
                   <WelcomePage />
                 </Row>
               </Container>
