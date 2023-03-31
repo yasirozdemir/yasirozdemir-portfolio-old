@@ -1,4 +1,3 @@
-import { Container, Row } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./components/LandingPage";
 
@@ -10,11 +9,7 @@ function App() {
           path="/"
           element={
             <>
-              <Container fluid>
-                <Row>
-                  <WelcomePage />
-                </Row>
-              </Container>
+              <WelcomePage />
             </>
           }
         />
