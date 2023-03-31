@@ -5,7 +5,7 @@ import "./style.css";
 const WelcomePage = () => {
   return (
     <Container fluid>
-      <Row>
+      <Row className="flex-column-reverse flex-lg-row">
         <Col xs={12} lg={4} id="landing-page__left">
           <div className="pfp-wrapper">
             <ul className="social-icons">
@@ -36,26 +36,52 @@ const WelcomePage = () => {
         </Col>
         <Col xs={12} lg={8} id="landing-page__right">
           <h1 className="mb-0">M. Yasir Ozdemir</h1>
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              cursor: "<h2>|</h2>",
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("<h2>FRONTEND DEVELOPER</h2>")
-                .pauseFor(3000)
-                .deleteAll()
-                .typeString("<h2>BACKEND DEVELOPER</h2>")
-                .pauseFor(3000)
-                .deleteAll()
-                .typeString("<h2>FULL-STACK DEVELOPER</h2>")
-                .pauseFor(3000)
-                .deleteAll()
-                .start();
-            }}
-          />
+          <div className="d-none d-lg-block">
+            <Typewriter
+              className="lg"
+              options={{
+                autoStart: true,
+                loop: true,
+                cursor: "<h2>|</h2>",
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("<h2>FRONTEND DEVELOPER</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .typeString("<h2>BACKEND DEVELOPER</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .typeString("<h2>FULL-STACK DEVELOPER</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </div>
+          <div className="d-block d-lg-none">
+            <Typewriter
+              className="lg"
+              options={{
+                autoStart: true,
+                loop: true,
+                cursor: "<h2>|</h2>",
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("<h2>FRONTEND DEV</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .typeString("<h2>BACKEND DEV</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .typeString("<h2>FULL-STACK DEV</h2>")
+                  .pauseFor(3000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </div>
         </Col>
       </Row>
     </Container>

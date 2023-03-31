@@ -8,16 +8,17 @@
   height: 100%;
 }
 
+#landing-page__left .pfp-wrapper img {
+  position: absolute;
+  z-index: 200;
+}
+
 #landing-page__left .pfp-wrapper ul.social-icons {
   margin-block: 0;
   padding-inline-start: 0;
   list-style: none;
   display: flex;
   color: var(--secondary-bg-color);
-}
-
-#landing-page__left .pfp-wrapper ul.social-icons li {
-  width: 100%;
 }
 
 #landing-page__left .pfp-wrapper ul.social-icons a {
@@ -39,7 +40,10 @@
 }
 
 #landing-page__right {
-  background-color: var(--secondary-bg-color);
+  background-image: url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-inline: 0;
   display: flex;
   flex-direction: column;
@@ -49,6 +53,12 @@
 
 #landing-page__right h1 {
   font-size: 4.5rem;
+  text-align: center;
+  text-shadow: 0px 0px 2px var(--secondary-bg-color);
+}
+
+#landing-page__right .Typewriter {
+  text-align: center;
 }
 
 #landing-page__right .Typewriter h2 {
@@ -58,41 +68,18 @@
   font-weight: 700;
   color: var(--secondary-text-color);
   font-size: 2.2rem;
-}
-
-/* <= LG */
-@media (max-width: 992px) {
-  #landing-page__left .pfp-wrapper {
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-  }
-
-  #landing-page__left .pfp-wrapper img {
-    position: relative;
-    display: none;
-  }
-  #landing-page__left .pfp-wrapper ul.social-icons {
-    column-gap: 1rem;
-  }
+  text-shadow: 0px 0px 2px white;
 }
 
 /* >= LG */
 @media (min-width: 992px) {
   #landing-page__left .pfp-wrapper img {
-    position: absolute;
-    z-index: 200;
     right: -175px;
     width: 350px;
     border-radius: 1rem;
-    /* border-radius: 1rem 50% 50% 1rem; */
     border: 8px solid var(--primary-bg-color);
   }
   #landing-page__right {
-    background-image: url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-height: 100vh;
     padding-inline-start: 150px;
   }
@@ -110,9 +97,15 @@
     justify-content: space-between;
     height: 334px;
   }
+  #landing-page__left .pfp-wrapper ul.social-icons li {
+    width: 100%;
+  }
+  #landing-page__right h1 {
+    font-size: 4.5rem;
+  }
 }
 
-@media (min-width: 992) and (max-width: 1150px) {
+@media (max-width: 1150px) {
   #landing-page__right h1 {
     font-size: 3.5rem;
   }
@@ -121,5 +114,75 @@
   }
   #landing-page__left .pfp-wrapper ul.social-icons {
     margin-inline-end: 190px;
+  }
+}
+
+/* <= LG */
+@media (max-width: 992px) {
+  #landing-page__left {
+    min-height: 40vh;
+  }
+  #landing-page__left .pfp-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #landing-page__left .pfp-wrapper img {
+    top: -125px;
+    width: 250px;
+    border: 5px solid var(--primary-bg-color);
+    border-radius: 0.5rem;
+  }
+  #landing-page__left .pfp-wrapper ul.social-icons {
+    margin-inline-end: 0px;
+    margin-block-start: 125px;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    padding-inline: 4rem;
+    padding-block: 2rem;
+    justify-content: center;
+  }
+  #landing-page__right {
+    min-height: 60vh;
+    padding-block-end: 75px;
+    padding-inline: 1rem;
+  }
+  #landing-page__right h1 {
+    line-height: 3.5rem;
+    padding-block-end: 1rem;
+  }
+  #landing-page__left .pfp-wrapper ul.social-icons li {
+    min-width: 30%;
+  }
+}
+
+/* <= MD */
+@media (max-width: 768px) {
+  #landing-page__left .pfp-wrapper ul.social-icons li {
+    min-width: 40%;
+  }
+}
+
+/* <= XSM */
+@media (max-width: 576px) {
+  #landing-page__left .pfp-wrapper img {
+    top: -100px;
+    width: 200px;
+    border: 5px solid var(--primary-bg-color);
+    border-radius: 0.5rem;
+  }
+  #landing-page__left .pfp-wrapper ul.social-icons li {
+    min-width: 80%;
+  }
+}
+
+/* <= XXSM */
+@media (max-width: 405px) {
+  #landing-page__left .pfp-wrapper ul.social-icons {
+    padding-inline: 2rem;
+  }
+  #landing-page__left .pfp-wrapper ul.social-icons li {
+    min-width: 100%;
   }
 }
