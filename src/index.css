@@ -17,8 +17,8 @@ html {
 body {
   font-family: var(--primary-font) !important;
   color: var(--primary-text-color) !important;
+  background-color: var(--secondary-bg-color) !important;
   user-select: none;
-  background: rgb(8, 23, 46);
 }
 
 a {
