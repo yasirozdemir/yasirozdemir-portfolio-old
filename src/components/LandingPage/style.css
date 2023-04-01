@@ -175,6 +175,9 @@
   #landing-page__left .pfp-wrapper ul.social-icons li {
     min-width: 80%;
   }
+  #landing-page__left .pfp-wrapper ul.social-icons {
+    margin-block-start: 100px;
+  }
 }
 
 /* <= XXSM */

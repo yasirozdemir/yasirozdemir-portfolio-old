@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const WelcomePage = () => {
   return (
@@ -10,19 +11,31 @@ const WelcomePage = () => {
           <div className="pfp-wrapper">
             <ul className="social-icons">
               <li>
-                <a href="/CV">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="/CV">LinkedIn</a>
+                <a
+                  href="https://www.linkedin.com/in/muhammedyasirozdemir/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
               </li>
               <li>
-                <a href="/CV">Github</a>
+                <a
+                  href="https://github.com/yasirozdemir/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
               </li>
               <li>
                 <a href="/CV">Resume</a>
               </li>
               <li>
-                <a href="/CV">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
                 <a href="/CV">Contact</a>
