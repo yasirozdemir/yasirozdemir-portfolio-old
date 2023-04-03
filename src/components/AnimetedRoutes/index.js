@@ -3,15 +3,26 @@ import About from "../About";
 import LandingPage from "../LandingPage";
 import { AnimatePresence } from "framer-motion";
 import CustomNav from "../CustomNav";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
+  const [showNav, setShowNav] = useState(false);
+  const getScrollableHeight = () => {
+    const viewportHeight = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight
+    );
+    return viewportHeight;
+  };
   const handleScroll = () => {
-    console.log(window.scrollY);
+    const scrollValue = document.documentElement.scrollTop;
+    const showNav2 = scrollValue >= getScrollableHeight();
+    setShowNav(showNav2);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    // eslint-disable-next-line
   }, []);
   return (
     <AnimatePresence mode="wait">
@@ -20,8 +31,13 @@ const AnimatedRoutes = () => {
           path="/"
           element={
             <>
+              <div className="d-block d-lg-none">
+                <CustomNav showNav={showNav} />
+              </div>
               <LandingPage />
-              <CustomNav />
+              <div className="d-none d-lg-block">
+                <CustomNav showNav={showNav} />
+              </div>
               <About />
             </>
           }

@@ -2,9 +2,9 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const CustomNav = () => {
+const CustomNav = ({ showNav }) => {
   return (
-    <Navbar expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark" className="sticky-top">
       <Container fluid>
         <Link to="/" className="navbar-brand">
           MYO

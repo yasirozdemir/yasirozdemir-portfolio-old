@@ -69,6 +69,5 @@
 }
 
 .about__right_down {
-  background-color: var(--secondary-bg-color);
   color: var(--primary-bg-color);
 }
