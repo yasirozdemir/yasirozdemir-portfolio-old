@@ -36,7 +36,7 @@ const WelcomePage = () => {
                 animate={{ x: "0%", opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5, ease: easeOut }}
               >
-                <a href="#projects">Contact</a>
+                <a href="#contact">Contact</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
@@ -71,6 +71,15 @@ const WelcomePage = () => {
               transition={{ duration: 0.5, ease: easeOut }}
               src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
               alt="pfp"
+              className="d-none d-lg-block"
+            />
+            <m.img
+              initial={{ y: "50%", opacity: 0 }}
+              animate={{ y: "0%", opacity: 1 }}
+              transition={{ duration: 0.5, ease: easeOut }}
+              src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
+              alt="pfp"
+              className="d-block d-lg-none"
             />
           </div>
         </Col>
