@@ -3,14 +3,29 @@ import About from "../About";
 import LandingPage from "../LandingPage";
 import { AnimatePresence } from "framer-motion";
 import CustomNav from "../CustomNav";
+import { useEffect } from "react";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
+  const handleScroll = () => {
+    console.log(window.scrollY);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <AnimatePresence mode="wait">
-      <CustomNav loc={loc} />
       <Routes location={loc} key={loc.pathname}>
-        <Route path="/" element={<LandingPage />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <LandingPage />
+              <CustomNav />
+              <About />
+            </>
+          }
+        />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<h2>404 Page Not Found!</h2>} />
       </Routes>
