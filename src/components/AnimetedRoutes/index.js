@@ -31,11 +31,11 @@ const AnimatedRoutes = () => {
           path="/"
           element={
             <>
-              <div className="d-block d-lg-none">
+              <div className="sticky-top d-block d-lg-none">
                 <CustomNav showNav={showNav} />
               </div>
               <LandingPage />
-              <div className="d-none d-lg-block">
+              <div className="sticky-top d-none d-lg-block">
                 <CustomNav showNav={showNav} />
               </div>
               <About />

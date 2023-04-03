@@ -3,9 +3,7 @@
   color: var(--secondary-bg-color);
   font-size: 1.2rem;
   min-height: 60px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: #152c48;
 }
 
 .navbar .navbar-brand {
@@ -14,5 +12,9 @@
 }
 
 .navbar .navbar-nav {
-  background-color: var(--primary-bg-color);
+  background-color: inherit;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-inline: auto;
 }

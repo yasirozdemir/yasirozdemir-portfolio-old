@@ -1,29 +1,28 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 const CustomNav = ({ showNav }) => {
   return (
-    <Navbar expand="lg" variant="dark" className="sticky-top">
+    <Navbar expand="lg" variant="dark">
       <Container fluid>
-        <Link to="/" className="navbar-brand">
+        <a href="#myo" className="navbar-brand">
           MYO
-        </Link>
+        </a>
         <Navbar.Toggle aria-controls="custom-nav" />
         <Navbar.Collapse id="custom-nav">
           <Nav className="ml-auto">
-            <Link to="/about" className="nav-link">
+            <a href="#about" className="nav-link">
               About
-            </Link>
+            </a>
             <a href="/CV" className="nav-link">
               Resume
             </a>
-            <Link to="/projects" className="nav-link">
+            <a href="#projects" className="nav-link">
               Projects
-            </Link>
-            <Link to="/projects" className="nav-link">
+            </a>
+            <a href="#contact" className="nav-link">
               Contact
-            </Link>
+            </a>
             <a
               href="https://www.linkedin.com/in/muhammedyasirozdemir/"
               target="_blank"

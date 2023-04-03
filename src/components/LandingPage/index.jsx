@@ -1,12 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import "./style.css";
-import { Link } from "react-router-dom";
 import { easeOut, motion as m } from "framer-motion";
 
 const WelcomePage = () => {
   return (
-    <Container fluid>
+    <Container fluid id="myo">
       <Row className="flex-column-reverse flex-lg-row">
         <Col xs={12} lg={4} id="landing-page__left_up">
           <div className="pfp-wrapper">
@@ -30,14 +29,14 @@ const WelcomePage = () => {
                 animate={{ x: "0%", opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5, ease: easeOut }}
               >
-                <Link to="/projects">Projects</Link>
+                <a href="#projects">Projects</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5, ease: easeOut }}
               >
-                <a href="/CV">Contact</a>
+                <a href="#projects">Contact</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
