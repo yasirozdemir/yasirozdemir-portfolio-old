@@ -4,6 +4,7 @@ import LandingPage from "../LandingPage";
 import { AnimatePresence } from "framer-motion";
 import CustomNav from "../CustomNav";
 import { useEffect, useState } from "react";
+import Contact from "../Contact";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
@@ -39,10 +40,10 @@ const AnimatedRoutes = () => {
                 <CustomNav showNav={showNav} />
               </div>
               <About />
+              <Contact />
             </>
           }
         />
-        <Route path="/about" element={<About />} />
         <Route path="*" element={<h2>404 Page Not Found!</h2>} />
       </Routes>
     </AnimatePresence>
