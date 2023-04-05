@@ -8,7 +8,12 @@
   flex-direction: column;
   padding: 0rem 1rem;
   row-gap: 1rem;
-  border-inline-start: 2px solid var(--secondary-bg-color);
+}
+
+@media (min-width: 992px) {
+  #contact form {
+    border-inline-start: 2px solid var(--secondary-bg-color);
+  }
 }
 
 #contact form .group {
