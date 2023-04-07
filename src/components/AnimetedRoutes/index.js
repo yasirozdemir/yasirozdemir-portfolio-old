@@ -8,12 +8,18 @@ import { useEffect, useLayoutEffect, useState } from "react";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
-  const [navPlace, setNavPlace] = useState(true);
-  const [vw, setVw] = useState(0);
+  const [navPlace, setNavPlace] = useState(true); // if true -> navbar must be under the landing page
+  const [viewport, setViewport] = useState({
+    vw: 0,
+    vh: 0,
+  });
 
   useLayoutEffect(() => {
     const updateVw = () => {
-      setVw(window.innerWidth);
+      setViewport({
+        vw: window.innerWidth,
+        vh: window.innerHeight,
+      });
     };
     window.addEventListener("resize", updateVw);
     updateVw();
@@ -21,9 +27,9 @@ const AnimatedRoutes = () => {
   }, []);
 
   useEffect(() => {
-    if (vw >= 992) setNavPlace(true);
+    if (viewport.vw >= 992) setNavPlace(true);
     else setNavPlace(false);
-  }, [vw]);
+  }, [viewport.vw]);
 
   return (
     <AnimatePresence mode="wait">
@@ -35,11 +41,11 @@ const AnimatedRoutes = () => {
               {navPlace ? (
                 <>
                   <LandingPage />
-                  <CustomNav />
+                  <CustomNav viewport={viewport} />
                 </>
               ) : (
                 <>
-                  <CustomNav />
+                  <CustomNav viewport={viewport} />
                   <LandingPage />
                 </>
               )}

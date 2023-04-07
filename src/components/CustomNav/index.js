@@ -1,10 +1,36 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./style.css";
+import { useEffect, useState } from "react";
 
-const CustomNav = () => {
+const CustomNav = ({ viewport }) => {
+  const [scroll, setScroll] = useState({
+    y: 0,
+    prevY: 0,
+  });
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll((prevState) => {
+        return {
+          y: window.scrollY,
+          prevY: prevState.y,
+        };
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (scroll.prevY > scroll.y) setShowNav(true);
+    else if (scroll.prevY === scroll.y) return;
+    else setShowNav(false);
+  }, [scroll]);
+
   return (
     <div className="sticky-top">
-      <Navbar expand="lg" variant="dark">
+      <Navbar expand="lg" variant="dark" className={!showNav && "hideNav"}>
         <Container fluid>
           <a href="#myo" className="navbar-brand">
             MYO

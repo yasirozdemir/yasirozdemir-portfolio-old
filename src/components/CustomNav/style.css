@@ -3,6 +3,18 @@
   font-size: 1.2rem;
   min-height: 60px;
   background-color: var(--secondary-bg-color);
+  transition: all 500ms ease;
+  position: absolute !important;
+  width: 100%;
+}
+
+#custom-nav {
+  width: 100%;
+  z-index: 2000;
+}
+
+.navbar.hideNav {
+  transform: translateY(-100%);
 }
 
 .navbar .navbar-brand {
