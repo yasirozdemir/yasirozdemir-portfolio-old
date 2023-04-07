@@ -19,7 +19,7 @@ const Contact = () => {
   };
   return (
     <Container fluid>
-      <Row id="contact" className="justify-content-center no-gutters pr-lg-5">
+      <Row id="contact" className="justify-content-center pr-lg-3 mb-3 mb-lg-5">
         <Col
           xs={12}
           sm={10}
@@ -28,12 +28,13 @@ const Contact = () => {
           className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0"
         >
           <h1 className="text-center mb-0">Contact Me!</h1>
-          <img
-            src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
-            alt="Illustration from freesvgillustration.com"
-            id="contact-img"
-            style={{ maxWidth: "100%", maxHeight: "400px" }}
-          />
+          <div className="img-wrapper">
+            <img
+              src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
+              alt="Illustration from freesvgillustration.com"
+              style={{ maxWidth: "100%", maxHeight: "400px" }}
+            />
+          </div>
         </Col>
         <Col xs={12} sm={10} md={7} lg={6} className="contact__right_down ">
           <form ref={form} onSubmit={sendEmail}>

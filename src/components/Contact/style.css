@@ -1,6 +1,21 @@
 #contact {
   color: var(--primary-text-color);
-  margin-block: 3rem;
+}
+
+#contact .img-wrapper {
+  position: relative;
+}
+
+#contact .img-wrapper::after {
+  position: absolute;
+  content: "";
+  top: 90%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgba(8, 23, 46, 0.308);
 }
 
 #contact form {
