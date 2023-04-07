@@ -3,28 +3,28 @@ import About from "../About";
 import LandingPage from "../LandingPage";
 import { AnimatePresence } from "framer-motion";
 import CustomNav from "../CustomNav";
-import { useEffect, useState } from "react";
 import Contact from "../Contact";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
-  const [showNav, setShowNav] = useState(false);
-  const getScrollableHeight = () => {
-    const viewportHeight = Math.max(
-      document.documentElement.clientHeight,
-      window.innerHeight
-    );
-    return viewportHeight;
-  };
-  const handleScroll = () => {
-    const scrollValue = document.documentElement.scrollTop;
-    const showNav2 = scrollValue >= getScrollableHeight();
-    setShowNav(showNav2);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    // eslint-disable-next-line
+  const [navPlace, setNavPlace] = useState(true);
+  const [vw, setVw] = useState(0);
+
+  useLayoutEffect(() => {
+    const updateVw = () => {
+      setVw(window.innerWidth);
+    };
+    window.addEventListener("resize", updateVw);
+    updateVw();
+    return () => window.removeEventListener("resize", updateVw);
   }, []);
+
+  useEffect(() => {
+    if (vw >= 992) setNavPlace(true);
+    else setNavPlace(false);
+  }, [vw]);
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={loc} key={loc.pathname}>
@@ -32,13 +32,17 @@ const AnimatedRoutes = () => {
           path="/"
           element={
             <>
-              <div className="sticky-top d-block d-lg-none">
-                <CustomNav showNav={showNav} />
-              </div>
-              <LandingPage />
-              <div className="sticky-top d-none d-lg-block">
-                <CustomNav showNav={showNav} />
-              </div>
+              {navPlace ? (
+                <>
+                  <LandingPage />
+                  <CustomNav />
+                </>
+              ) : (
+                <>
+                  <CustomNav />
+                  <LandingPage />
+                </>
+              )}
               <About />
               <Contact />
             </>

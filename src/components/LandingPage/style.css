@@ -119,7 +119,7 @@
 }
 
 /* <= LG */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #landing-page__left_up {
     min-height: 20vh;
     background-color: var(--primary-bg-color);
