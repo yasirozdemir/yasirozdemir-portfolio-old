@@ -4,8 +4,8 @@ import "./style.css";
 const About = () => {
   return (
     <Container fluid id="about">
-      <Row>
-        <Col xs={12} lg={4} className="about__left_up">
+      <Row className="justify-content-center">
+        <Col xs={12} lg={10} className="about_col">
           <h1>ABOUT ME</h1>
           <div className="about-me-par">
             <p>Hi, there! It's Muhammed Yasir 🧑‍💻</p>
@@ -39,30 +39,80 @@ const About = () => {
           </div>
           <h2>Tech Stack</h2>
           <ul className="tech-stack">
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>Redux.js</li>
-            <li>HTTP</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>NoSQL Databases</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li>Relational Databases</li>
-            <li>PostgreSQL</li>
-            <li>Sequelize</li>
-            <li>Postman</li>
-            <li>Cloudinary</li>
-            <li>Vercel</li>
-            <li>Railway</li>
-            <li>Cyclic</li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/html_txesmj.png"
+                alt="html"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878839/portfolio/css_vvbtkf.png"
+                alt="css"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/js_pbgkgw.png"
+                alt="js"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/ts_q9vyqa.png"
+                alt="ts"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/bs_thiogx.png"
+                alt="bs"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/react_awfte0.png"
+                alt="react"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/Redux_mv93yn.png"
+                alt="redux"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680879039/portfolio/express_azjmqo.png"
+                alt="express"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/nodejs_vavnzn.jpg"
+                alt="node"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/mongo_yzq9w3.png"
+                alt="mongo"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/postgresql_uxhnvy.png"
+                alt="postgresql"
+              />
+            </li>
+            <li>
+              <img
+                src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/postman_iothff.png"
+                alt="postman"
+              />
+            </li>
           </ul>
         </Col>
-        <Col xs={12} lg={8} className="about__right_down"></Col>
       </Row>
     </Container>
   );

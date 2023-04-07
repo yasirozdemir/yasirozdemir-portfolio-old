@@ -1,4 +1,4 @@
-.about__left_up {
+.about_col {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   min-height: 100vh; /* LG */
@@ -7,18 +7,18 @@
   justify-content: center;
 }
 
-.about__left_up h1 {
+.about_col h1 {
   font-weight: 700;
   margin-block-end: 1rem;
 }
 
-.about__left_up h2 {
+.about_col h2 {
   font-weight: 700;
   padding-block-start: 2rem;
   position: relative;
 }
 
-.about__left_up h2::after {
+.about_col h2::after {
   position: absolute;
   content: "";
   top: 0.7rem;
@@ -28,49 +28,46 @@
   height: 2px;
 }
 
-.about__left_up .about-me-par {
+.about_col .about-me-par {
   font-weight: 400;
   font-size: 1.25rem;
 }
 
-.about__left_up .about-me-par p {
+.about_col .about-me-par p {
   line-height: 1.3rem;
 }
 
-.about__left_up .links {
+.about_col .links {
   display: flex;
   column-gap: 1rem;
   font-size: 1.25rem;
   margin-block: 1rem;
 }
 
-.about__left_up .links a {
+.about_col .links a {
   padding: 0.15rem 0.6rem;
   border: 2px solid var(--primary-text-color);
   border-radius: 0.3rem;
   transition: all 300ms;
 }
 
-.about__left_up .links a:hover {
+.about_col .links a:hover {
   color: var(--primary-bg-color) !important;
   background-color: var(--primary-text-color);
 }
 
-.about__left_up .links a:focus {
+.about_col .links a:focus {
   outline: transparent;
   background-color: var(--focus-bg);
 }
 
-.about__left_up .tech-stack {
+.about_col .tech-stack {
   list-style: none;
-  font-family: var(--typewritter-font);
-  padding-inline-start: 0;
   display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  row-gap: 0.5rem;
-  column-gap: 1rem;
-  text-decoration: underline;
+}
+
+.about_col .tech-stack li img {
+  width: 100%;
 }
 
 .about__right_down {
