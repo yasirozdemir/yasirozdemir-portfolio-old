@@ -19,25 +19,46 @@ const Contact = () => {
   };
   return (
     <Container fluid>
-      <Row id="contact">
-        <Col lg={6} className="d-none d-lg-block">
-          Planning to put an illustration here :D
+      <Row id="contact" className="justify-content-center no-gutters pr-lg-5">
+        <Col
+          xs={12}
+          sm={10}
+          md={7}
+          lg={6}
+          className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0"
+        >
+          <h1 className="text-center mb-0">Contact Me!</h1>
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
+            alt="Illustration from freesvgillustration.com"
+            id="contact-img"
+            style={{ maxWidth: "100%", maxHeight: "400px" }}
+          />
         </Col>
-        <Col xs={12} lg={6}>
+        <Col xs={12} sm={10} md={7} lg={6} className="contact__right_down ">
           <form ref={form} onSubmit={sendEmail}>
             <div className="group">
-              <label>Name</label>
-              <input type="text" name="user_name" required />
+              <input type="text" name="user_name" placeholder="Name" required />
             </div>
             <div className="group">
-              <label>Email</label>
-              <input type="email" name="user_email" required />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                required
+              />
             </div>
             <div className="group">
-              <label>Message</label>
-              <textarea rows="8" name="message" required />
+              <textarea
+                rows="8"
+                name="message"
+                placeholder="Your message"
+                required
+              />
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" className="mx-0">
+              Send
+            </button>
           </form>
         </Col>
       </Row>

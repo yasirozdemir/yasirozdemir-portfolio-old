@@ -1,8 +1,8 @@
 .navbar {
-  color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
   font-size: 1.2rem;
   min-height: 60px;
-  background-color: #152c48;
+  background-color: var(--secondary-bg-color);
 }
 
 .navbar .navbar-brand {

@@ -1,5 +1,5 @@
 #landing-page__left_up {
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
   padding-inline: 0;
 }
 
@@ -18,7 +18,7 @@
   padding-inline-start: 0;
   list-style: none;
   display: flex;
-  color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
 }
 
 #landing-page__left_up .pfp-wrapper ul.social-icons a {
@@ -30,13 +30,13 @@
   border-radius: 0.5rem;
   font-weight: 300;
   font-weight: 500;
-  border: 2px solid var(--secondary-bg-color);
+  border: 2px solid var(--primary-text-color);
   transition: all 500ms;
 }
 
 #landing-page__left_up .pfp-wrapper ul.social-icons a:hover {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-bg-color) !important;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-bg-color) !important;
 }
 
 #landing-page__right_down {
@@ -54,7 +54,8 @@
 #landing-page__right_down h1 {
   font-size: 4.5rem;
   text-align: center;
-  text-shadow: 0px 0px 2px var(--secondary-bg-color);
+  text-shadow: 0px 0px 2px var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 #landing-page__right_down .Typewriter {
@@ -77,7 +78,7 @@
     right: -175px;
     width: 350px;
     border-radius: 1rem;
-    border: 8px solid var(--primary-bg-color);
+    border: 8px solid var(--secondary-bg-color);
   }
   #landing-page__right_down {
     min-height: 100vh;
@@ -121,6 +122,7 @@
 @media (max-width: 992px) {
   #landing-page__left_up {
     min-height: 20vh;
+    background-color: var(--primary-bg-color);
   }
   #landing-page__left_up .pfp-wrapper {
     flex-direction: column-reverse;

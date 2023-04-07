@@ -4,9 +4,9 @@
 :root {
   --primary-font: "Kanit", sans-serif;
   --typewritter-font: "Courier Prime", monospace;
-  --primary-bg-color: rgb(8, 23, 46);
-  --secondary-bg-color: rgb(249, 249, 249);
-  --primary-text-color: rgb(8, 23, 46);
+  --primary-bg-color: rgb(21, 44, 72);
+  --secondary-bg-color: rgb(8, 23, 46);
+  --primary-text-color: rgb(249, 249, 249);
   --secondary-text-color: rgb(8, 23, 46);
 }
 

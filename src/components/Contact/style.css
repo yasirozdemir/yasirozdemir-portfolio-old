@@ -1,18 +1,23 @@
 #contact {
-  color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
   margin-block: 3rem;
 }
 
 #contact form {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem;
   row-gap: 1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   #contact form {
-    border-inline-start: 2px solid var(--secondary-bg-color);
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #contact .contact__left_up {
+    border-block-end: 2px solid var(--primary-text-color);
   }
 }
 
@@ -21,19 +26,15 @@
   flex-direction: column;
 }
 
-#contact form .group label {
-  font-size: 1.4rem;
-}
-
 #contact form .group input,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   padding: 0.5rem;
-  background-color: #152c48;
+  background-color: var(--secondary-bg-color);
   backdrop-filter: opacity(20%);
   color: inherit;
   -webkit-backdrop-filter: opacity(20%);
@@ -42,18 +43,17 @@ textarea {
 
 #contact form button {
   margin-inline-end: auto;
-  padding: 0.15rem 01rem;
-  font-size: 1.4rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
   font-weight: 300;
   font-weight: 500;
-  border: 2px solid var(--secondary-bg-color);
+  border: transparent;
   transition: all 500ms;
-  color: inherit;
-  background-color: var(--primary-bg-color);
+  color: #8a919c;
+  background-color: var(--secondary-bg-color);
 }
 
 #contact form button:hover {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-bg-color) !important;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-bg-color) !important;
 }
