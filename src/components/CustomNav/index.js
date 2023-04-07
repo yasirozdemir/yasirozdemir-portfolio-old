@@ -7,7 +7,7 @@ const CustomNav = ({ viewport }) => {
     y: 0,
     prevY: 0,
   });
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {

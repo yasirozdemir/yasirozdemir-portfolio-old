@@ -30,11 +30,11 @@
   }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   #contact .contact__left_up {
     border-block-end: 2px solid var(--primary-text-color);
   }
-}
+} */
 
 #contact form .group {
   display: flex;
@@ -56,6 +56,11 @@ textarea {
   border: transparent;
 }
 
+#contact form .group input:focus,
+textarea:focus {
+  background-color: var(--focus-bg);
+}
+
 #contact form button {
   margin-inline-end: auto;
   padding: 0.5rem;
@@ -71,4 +76,11 @@ textarea {
 #contact form button:hover {
   background-color: var(--primary-text-color);
   color: var(--secondary-bg-color) !important;
+}
+
+#contact form button:focus,
+#contact form button:focus-visible {
+  outline: transparent;
+  background-color: var(--focus-bg);
+  color: var(--primary-text-color);
 }

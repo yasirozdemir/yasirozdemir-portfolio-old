@@ -8,6 +8,7 @@
   --secondary-bg-color: rgb(8, 23, 46);
   --primary-text-color: rgb(249, 249, 249);
   --secondary-text-color: rgb(8, 23, 46);
+  --focus-bg: rgba(173, 173, 173, 0.2);
 }
 
 html {

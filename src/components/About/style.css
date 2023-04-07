@@ -56,6 +56,11 @@
   background-color: var(--primary-text-color);
 }
 
+.about__left_up .links a:focus {
+  outline: transparent;
+  background-color: var(--focus-bg);
+}
+
 .about__left_up .tech-stack {
   list-style: none;
   font-family: var(--typewritter-font);

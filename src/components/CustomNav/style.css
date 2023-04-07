@@ -22,10 +22,20 @@
   font-weight: 700;
 }
 
+.navbar .navbar-brand:focus {
+  outline: none;
+}
+
 .navbar .navbar-nav {
   background-color: inherit;
 }
 
 .navbar .navbar-nav .nav-link {
   margin-inline: auto;
+  border-radius: 0.3rem;
+}
+
+.navbar .navbar-nav .nav-link:focus {
+  outline: transparent;
+  background-color: var(--focus-bg);
 }

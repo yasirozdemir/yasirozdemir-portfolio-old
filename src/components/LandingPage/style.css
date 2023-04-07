@@ -39,6 +39,12 @@
   color: var(--secondary-bg-color) !important;
 }
 
+#landing-page__left_up .pfp-wrapper ul.social-icons a:focus {
+  background-color: var(--focus-bg);
+  color: var(--primary-text-color) !important;
+  outline: transparent;
+}
+
 #landing-page__right_down {
   background-image: url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg);
   background-repeat: no-repeat;
