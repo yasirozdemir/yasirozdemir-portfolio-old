@@ -20,6 +20,7 @@ body {
   color: var(--primary-text-color) !important;
   background-color: var(--primary-bg-color) !important;
   user-select: none;
+  overflow-x: hidden;
 }
 
 a {

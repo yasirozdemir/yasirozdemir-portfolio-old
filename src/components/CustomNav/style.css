@@ -17,6 +17,10 @@
   transform: translateY(-100%);
 }
 
+.navbar {
+  transform: translateY(0%);
+}
+
 .navbar .navbar-brand {
   font-size: 2rem;
   font-weight: 700;
