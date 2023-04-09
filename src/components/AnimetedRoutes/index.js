@@ -14,6 +14,14 @@ const AnimatedRoutes = () => {
     vh: 0,
   });
 
+  const observer = new IntersectionObserver((elements) => {
+    elements.forEach((el) => {
+      if (el.isIntersecting) {
+        el.target.classList.add("show");
+      }
+    });
+  });
+
   useLayoutEffect(() => {
     const updateVw = () => {
       setViewport({
@@ -49,8 +57,8 @@ const AnimatedRoutes = () => {
                   <LandingPage />
                 </>
               )}
-              <About />
-              <Contact />
+              <About observer={observer} />
+              <Contact observer={observer} />
             </>
           }
         />
