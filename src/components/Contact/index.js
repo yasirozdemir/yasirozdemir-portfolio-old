@@ -25,13 +25,20 @@ const Contact = ({ observer }) => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
-      const result = await emailjs.sendForm(
+      const user_name = document.getElementsByName("user_name")[0].value;
+      const user_email = document.getElementsByName("user_email")[0].value;
+      const message = document.getElementsByName("message")[0].value;
+      const mail = {
+        user_name,
+        user_email,
+        message,
+      };
+      const result = await emailjs.send(
         REACT_APP_SERV_ID,
         REACT_APP_TEMP_ID,
-        form.current,
+        mail,
         REACT_APP_USER_KEY
       );
-      console.log(result);
       if (result.status === 200) {
         toast.success("Your message has been sent!", alertOptions);
         document.querySelector("#contact form").reset();
