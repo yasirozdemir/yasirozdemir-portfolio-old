@@ -23,7 +23,7 @@ const Contact = ({ observer }) => {
 
   return (
     <Container>
-      <Row id="contact" className="justify-content-center pr-lg-3 mb-3 mb-lg-5">
+      <Row id="contact" className="justify-content-center pr-lg-3 mb-4 mb-lg-5">
         <Col
           xs={12}
           sm={10}

@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import CustomNav from "../CustomNav";
 import Contact from "../Contact";
 import { useEffect, useLayoutEffect, useState } from "react";
+import CustomFooter from "../CustomFooter";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
@@ -59,6 +60,7 @@ const AnimatedRoutes = () => {
               )}
               <About observer={observer} />
               <Contact observer={observer} />
+              <CustomFooter />
             </>
           }
         />

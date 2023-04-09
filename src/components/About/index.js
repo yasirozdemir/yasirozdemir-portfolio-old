@@ -19,9 +19,9 @@ const About = ({ observer }) => {
               father, and love all the animals 🐱
             </p>
             <p>
-              I'm a full-stack developer, an amateur mobile photographer ,and a
+              I'm a full-stack developer, an amateur mobile photographer, and a
               full time learner 💻 I like to write, and trying to improve my
-              writing skills, I'm sharing some of my essays on Medium ✏️
+              writing skills, I'm publishing some of my essays on Medium ✏️
             </p>
           </div>
           <div className="links justify-content-md-start">
