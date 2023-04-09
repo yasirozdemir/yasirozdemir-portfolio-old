@@ -6,6 +6,7 @@ import CustomNav from "../CustomNav";
 import Contact from "../Contact";
 import { useEffect, useLayoutEffect, useState } from "react";
 import CustomFooter from "../CustomFooter";
+import Projects from "../Projects";
 
 const AnimatedRoutes = () => {
   const loc = useLocation();
@@ -59,6 +60,7 @@ const AnimatedRoutes = () => {
                 </>
               )}
               <About observer={observer} />
+              <Projects />
               <Contact observer={observer} />
               <CustomFooter />
             </>

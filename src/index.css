@@ -29,7 +29,8 @@ a {
 }
 
 #about h1,
-#contact h1 {
+#contact h1,
+#projects h1 {
   font-weight: 600;
   margin-block-end: 1rem;
 }
