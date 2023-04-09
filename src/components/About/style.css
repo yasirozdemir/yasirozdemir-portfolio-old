@@ -1,6 +1,4 @@
 .about_col_up {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +58,10 @@
   background-color: var(--focus-bg);
 }
 
+.about_row_down {
+  row-gap: 2rem;
+}
+
 .about_row_down .skill-badge {
   display: flex;
   align-items: center;
@@ -67,11 +69,18 @@
   background-color: rgba(196, 196, 196, 0.596);
   border-radius: 0.5rem;
   padding: 1rem;
-  max-width: 200px;
-  transition: all 300ms ease;
+  height: 150px;
+  width: 150px;
 }
 
-.about_row_down .skill-badge.hidden {
+@media (max-width: 300px) {
+  .about_row_down .skill-badge {
+    height: 120px;
+    min-width: 120px;
+  }
+}
+
+.about_row_down .col.hidden {
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-100%);
@@ -79,58 +88,58 @@
   transition: all 1000ms;
 }
 
-.about_row_down .skill-badge.show {
+.about_row_down .col.show {
   opacity: 1;
   transform: translateX(0%);
   filter: blur(0px);
 }
 
-.about_row_down .skill-badge:nth-of-type(2) {
+.about_row_down .col:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+.about_row_down .col:nth-of-type(3) {
   transition-delay: 200ms;
 }
 
-.about_row_down .skill-badge:nth-of-type(3) {
+.about_row_down .col:nth-of-type(4) {
+  transition-delay: 300ms;
+}
+
+.about_row_down .col:nth-of-type(5) {
   transition-delay: 400ms;
 }
 
-.about_row_down .skill-badge:nth-of-type(4) {
+.about_row_down .col:nth-of-type(6) {
+  transition-delay: 500ms;
+}
+
+.about_row_down .col:nth-of-type(7) {
   transition-delay: 600ms;
 }
 
-.about_row_down .skill-badge:nth-of-type(5) {
+.about_row_down .col:nth-of-type(8) {
+  transition-delay: 700ms;
+}
+
+.about_row_down .col:nth-of-type(9) {
   transition-delay: 800ms;
 }
 
-.about_row_down .skill-badge:nth-of-type(6) {
+.about_row_down .col:nth-of-type(9) {
+  transition-delay: 900ms;
+}
+
+.about_row_down .col:nth-of-type(10) {
   transition-delay: 1000ms;
 }
 
-.about_row_down .skill-badge:nth-of-type(7) {
+.about_row_down .col:nth-of-type(11) {
+  transition-delay: 1100ms;
+}
+
+.about_row_down .col:nth-of-type(12) {
   transition-delay: 1200ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(8) {
-  transition-delay: 1400ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(9) {
-  transition-delay: 1600ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(9) {
-  transition-delay: 1800ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(10) {
-  transition-delay: 2000ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(11) {
-  transition-delay: 2200ms;
-}
-
-.about_row_down .skill-badge:nth-of-type(12) {
-  transition-delay: 2400ms;
 }
 
 /* .about_row_down .skill-badge::after {
@@ -166,11 +175,7 @@
 } */
 
 .about_row_down .skill-badge img {
-  height: 120px;
-  width: 120px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-}
-
-.about_row_down .skill-badge:nth-last-of-type(1) img {
-  object-fit: contain;
 }

@@ -39,3 +39,7 @@
   outline: transparent;
   background-color: var(--focus-bg);
 }
+
+.navbar .navbar-toggler {
+  border: transparent;
+}

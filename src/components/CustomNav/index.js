@@ -31,11 +31,13 @@ const CustomNav = ({ viewport }) => {
   return (
     <div className="sticky-top">
       <Navbar expand="lg" variant="dark" className={!showNav && "hideNav"}>
-        <Container fluid>
+        <Container>
           <a href="#myo" className="navbar-brand">
             MYO
           </a>
-          <Navbar.Toggle aria-controls="custom-nav" />
+          <Navbar.Toggle aria-controls="custom-nav">
+            <span className="text-white">X</span>
+          </Navbar.Toggle>
           <Navbar.Collapse id="custom-nav">
             <Nav className="ml-auto">
               <a href="#about" className="nav-link">
