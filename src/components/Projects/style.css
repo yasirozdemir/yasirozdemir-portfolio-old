@@ -32,6 +32,18 @@
   row-gap: 1.5rem;
 }
 
+#projects .projects-row .col {
+  transition: all 1000ms;
+}
+
+#projects .projects-row .col.hidden {
+  filter: blur(8px);
+}
+
+#projects .projects-row .col.show {
+  filter: blur(0px);
+}
+
 #projects .project-card {
   background-color: rgba(196, 196, 196, 0.596);
   border-radius: 0.3rem;

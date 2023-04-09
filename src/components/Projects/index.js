@@ -1,7 +1,10 @@
 import "./style.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-const Projects = () => {
+const Projects = ({ observer }) => {
+  const projects = document.querySelectorAll(".projects-row .col");
+  projects.forEach((el) => observer.observe(el));
+
   return (
     <Container id="projects" className="mb-5">
       <Row>
@@ -28,7 +31,7 @@ const Projects = () => {
         sm={2}
         md={3}
       >
-        <Col>
+        <Col className="hidden">
           <div className="project-card">
             <div>
               <img
@@ -51,7 +54,7 @@ const Projects = () => {
             </div>
           </div>
         </Col>
-        <Col>
+        <Col className="hidden">
           <div className="project-card">
             <div>
               <img
@@ -74,7 +77,7 @@ const Projects = () => {
             </div>
           </div>
         </Col>
-        <Col>
+        <Col className="hidden">
           <div className="project-card">
             <div>
               <img

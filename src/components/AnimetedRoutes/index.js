@@ -60,7 +60,7 @@ const AnimatedRoutes = () => {
                 </>
               )}
               <About observer={observer} />
-              <Projects />
+              <Projects observer={observer} />
               <Contact observer={observer} />
               <CustomFooter />
             </>
