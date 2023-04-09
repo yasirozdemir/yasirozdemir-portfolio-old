@@ -50,7 +50,7 @@ const Contact = ({ observer }) => {
 
   return (
     <>
-      <Container>
+      <Container className="pt-5">
         <Row
           id="contact"
           className="justify-content-center pr-lg-3 mb-4 mb-lg-5"

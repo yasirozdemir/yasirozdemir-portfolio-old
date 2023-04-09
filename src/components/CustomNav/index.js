@@ -23,7 +23,7 @@ const CustomNav = ({ viewport }) => {
   }, []);
 
   useEffect(() => {
-    if (scroll.prevY >= scroll.y) setShowNav(true);
+    if (scroll.prevY > scroll.y) setShowNav(true);
     else if (scroll.prevY === scroll.y) return;
     else setShowNav(false);
   }, [scroll]);
@@ -68,7 +68,7 @@ const CustomNav = ({ viewport }) => {
                 rel="noreferrer"
                 className="nav-link"
               >
-                Github
+                GitHub
               </a>
             </Nav>
           </Navbar.Collapse>

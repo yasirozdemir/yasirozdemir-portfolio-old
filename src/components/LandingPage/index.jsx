@@ -61,7 +61,7 @@ const WelcomePage = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Github
+                  GitHub
                 </a>
               </m.li>
             </ul>

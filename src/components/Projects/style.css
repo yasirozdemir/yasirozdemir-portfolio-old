@@ -27,3 +27,60 @@
   outline: transparent;
   background-color: var(--focus-bg);
 }
+
+#projects .projects-row {
+  row-gap: 1.5rem;
+}
+
+#projects .project-card {
+  background-color: rgba(196, 196, 196, 0.596);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  color: var(--secondary-bg-color);
+}
+
+#projects .project-card div:nth-child(2) {
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+}
+
+.badge-container {
+  display: flex;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+  padding-block-end: 0.75rem;
+}
+
+.tool-badge {
+  font-size: 0.8rem;
+  border: 1px solid;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.tool-badge.react {
+  background-color: rgb(96, 217, 250, 0.5);
+}
+
+.tool-badge.redux {
+  background-color: rgb(119, 94, 174, 0.5);
+}
+
+.tool-badge.bootstrap {
+  background-color: rgb(91, 66, 130, 0.5);
+}
+
+.tool-badge.html {
+  background-color: rgb(229, 76, 33, 0.5);
+}
+
+.tool-badge.css {
+  background-color: rgb(13, 115, 183, 0.5);
+}
+
+.tool-badge.javascript {
+  background-color: rgb(208, 178, 30, 0.5);
+}
