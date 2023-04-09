@@ -84,3 +84,40 @@ textarea:focus {
   background-color: var(--focus-bg);
   color: var(--primary-text-color);
 }
+
+#contact form .group.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1000ms;
+}
+
+#contact form .group.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+#contact form .group:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+#contact form .group:nth-of-type(3) {
+  transition-delay: 200ms;
+}
+
+#contact form .group:nth-of-type(4) {
+  transition-delay: 300ms;
+}
+
+#contact .contact__left_up.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(10px);
+  transition: all 1000ms;
+  transition-delay: 300ms;
+}
+
+#contact .contact__left_up.show {
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0px);
+}

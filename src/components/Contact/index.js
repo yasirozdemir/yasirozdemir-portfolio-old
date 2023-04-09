@@ -3,7 +3,10 @@ import "./style.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-const Contact = () => {
+const Contact = ({ observer }) => {
+  const contactElements = document.querySelectorAll(".hidden");
+  contactElements.forEach((el) => observer.observe(el));
+
   const { REACT_APP_SERV_ID, REACT_APP_TEMP_ID, REACT_APP_USER_KEY } =
     process.env;
   const form = useRef();
@@ -24,7 +27,7 @@ const Contact = () => {
           xs={12}
           sm={10}
           md={6}
-          className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0"
+          className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0 hidden px-0"
         >
           <h1 className="text-center mb-0">Contact Me!</h1>
           <div className="img-wrapper">
@@ -35,12 +38,12 @@ const Contact = () => {
             />
           </div>
         </Col>
-        <Col xs={12} sm={10} md={6} className="contact__right_down ">
+        <Col xs={12} sm={10} md={6} className="contact__right_down px-0">
           <form ref={form} onSubmit={sendEmail}>
-            <div className="group">
+            <div className="group hidden">
               <input type="text" name="user_name" placeholder="Name" required />
             </div>
-            <div className="group">
+            <div className="group hidden">
               <input
                 type="email"
                 name="user_email"
@@ -48,7 +51,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="group">
+            <div className="group hidden">
               <textarea
                 rows="8"
                 name="message"
@@ -56,9 +59,11 @@ const Contact = () => {
                 required
               />
             </div>
-            <button type="submit" className="mx-0">
-              Send
-            </button>
+            <div className="group hidden">
+              <button type="submit" className="mx-0">
+                Send
+              </button>
+            </div>
           </form>
         </Col>
       </Row>

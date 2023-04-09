@@ -26,3 +26,9 @@ a {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+#about h1,
+#contact h1 {
+  font-weight: 600;
+  margin-block-end: 1rem;
+}
