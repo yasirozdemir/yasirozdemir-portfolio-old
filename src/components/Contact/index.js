@@ -21,9 +21,6 @@ const Contact = ({ observer }) => {
     console.log(result);
   };
 
-  const navToggler = document.querySelector("collapsed");
-  console.log(navToggler);
-
   return (
     <Container>
       <Row id="contact" className="justify-content-center pr-lg-3 mb-3 mb-lg-5">

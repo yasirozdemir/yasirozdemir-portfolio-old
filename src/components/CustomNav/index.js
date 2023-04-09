@@ -36,7 +36,9 @@ const CustomNav = ({ viewport }) => {
             MYO
           </a>
           <Navbar.Toggle aria-controls="custom-nav">
-            <span className="text-white">X</span>
+            <span className="icon-line"></span>
+            <span className="icon-line"></span>
+            <span className="icon-line"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="custom-nav">
             <Nav className="ml-auto">
