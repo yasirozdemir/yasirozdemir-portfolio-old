@@ -8,8 +8,8 @@ const About = ({ observer }) => {
   return (
     <Container id="about" className="my-5 py-0 py-md-5">
       <Row className="justify-content-center">
-        <Col xs={12} className="about_col_up mt-0 mb-5">
-          <h1>About Me</h1>
+        <Col xs={12} className="about_col_up mt-0 mb-4">
+          <h1 className="text-center text-md-left">About Me</h1>
           <div className="about-me-par">
             <p>Hi, there! It's Muhammed Yasir 🧑‍💻</p>
             <p>
@@ -24,7 +24,7 @@ const About = ({ observer }) => {
               writing skills, I'm sharing some of my essays on Medium ✏️
             </p>
           </div>
-          <div className="links">
+          <div className="links justify-content-md-start">
             <a
               href="https://medium.com/@muhammedyasirozdemir/"
               target="_blank"
@@ -42,6 +42,7 @@ const About = ({ observer }) => {
           </div>
         </Col>
       </Row>
+      <h1 className="text-center text-md-left">Tech Stack</h1>
       <Row xs={2} sm={3} md={4} lg={6} xl={12} className="about_row_down">
         <Col className="d-flex justify-content-center p-0 hidden">
           <div className="skill-badge">
