@@ -3,10 +3,10 @@ import "./style.css";
 
 const About = () => {
   return (
-    <Container fluid id="about" className="my-5 py-5">
+    <Container fluid id="about" className="my-5 py-0 py-md-5">
       <Row className="justify-content-center">
-        <Col xs={12} lg={10} className="about_col_up">
-          <h1>ABOUT ME</h1>
+        <Col xs={10} className="about_col_up mt-0 mb-5 p-0">
+          <h1>About Me</h1>
           <div className="about-me-par">
             <p>Hi, there! It's Muhammed Yasir 🧑‍💻</p>
             <p>

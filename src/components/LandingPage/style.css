@@ -127,7 +127,7 @@
 /* <= LG */
 @media (max-width: 991px) {
   #landing-page__left_up {
-    min-height: 20vh;
+    min-height: 15vh;
     background-color: var(--primary-bg-color);
   }
   #landing-page__left_up .pfp-wrapper {
