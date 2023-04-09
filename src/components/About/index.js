@@ -3,7 +3,7 @@ import "./style.css";
 
 const About = () => {
   return (
-    <Container fluid id="about">
+    <Container fluid id="about" className="my-5 py-5">
       <Row className="justify-content-center">
         <Col xs={12} lg={10} className="about_col_up">
           <h1>ABOUT ME</h1>
@@ -39,81 +39,79 @@ const About = () => {
           </div>
         </Col>
       </Row>
-      <Row>
-        <ul className="about_row_down px-5">
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/html_txesmj.png"
-              alt="html"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680878839/portfolio/css_vvbtkf.png"
-              alt="css"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880649/portfolio/js_arqpiz.png"
-              alt="js"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/ts_q9vyqa.png"
-              alt="ts"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880726/portfolio/bs_zjcqm1.png"
-              alt="bs"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880787/portfolio/react_g7k5uy.png"
-              alt="react"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/Redux_mv93yn.png"
-              alt="redux"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880446/portfolio/expressjs_logo_wzixvp.png"
-              alt="express"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880857/portfolio/node_vthzgb.png"
-              alt="node"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880942/portfolio/mongo_dpryoe.png"
-              alt="mongo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680880938/portfolio/postgresql_d6uyhn.png"
-              alt="postgresql"
-            />
-          </li>
-          <li>
-            <img
-              src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/postman_iothff.png"
-              alt="postman"
-            />
-          </li>
-        </ul>
+      <Row className="about_row_down justify-content-center">
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/icons/html_txesmj.png"
+            alt="html"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680997908/portfolio/icons/css_ddpjtc.png"
+            alt="css"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880649/portfolio/icons/js_arqpiz.png"
+            alt="js"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/icons/ts_q9vyqa.png"
+            alt="ts"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880726/portfolio/icons/bs_zjcqm1.png"
+            alt="bs"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880787/portfolio/icons/react_g7k5uy.png"
+            alt="react"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/icons/Redux_mv93yn.png"
+            alt="redux"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680997317/portfolio/icons/expressjs_logo_wzixvp_2295cb.png"
+            alt="express"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880857/portfolio/icons/node_vthzgb.png"
+            alt="node"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880942/portfolio/icons/mongo_dpryoe.png"
+            alt="mongo"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680880938/portfolio/icons/postgresql_d6uyhn.png"
+            alt="postgresql"
+          />
+        </Col>
+        <Col xs={5} md={3} lg={2} xl={1} className="skill-badge m-2 m-md-3">
+          <img
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1680878838/portfolio/icons/postman_iothff.png"
+            alt="postman"
+          />
+        </Col>
       </Row>
     </Container>
   );
