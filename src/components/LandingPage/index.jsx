@@ -7,7 +7,7 @@ const WelcomePage = () => {
   return (
     <Container fluid id="myo">
       <Row className="flex-column-reverse flex-lg-row">
-        <Col xs={12} lg={4} id="landing-page__left_up">
+        <Col xs={12} lg={4} id="landing-page__left_down">
           <div className="pfp-wrapper">
             <ul className="social-icons">
               <m.li
@@ -83,7 +83,7 @@ const WelcomePage = () => {
             />
           </div>
         </Col>
-        <Col xs={12} lg={8} id="landing-page__right_down">
+        <Col xs={12} lg={8} id="landing-page__right_up">
           <div style={{ overflow: "hidden" }}>
             <m.h1
               initial={{ y: "100%", opacity: 0 }}
