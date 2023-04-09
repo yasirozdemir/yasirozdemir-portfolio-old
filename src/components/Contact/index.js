@@ -20,6 +20,10 @@ const Contact = ({ observer }) => {
     );
     console.log(result);
   };
+
+  const navToggler = document.querySelector("collapsed");
+  console.log(navToggler);
+
   return (
     <Container>
       <Row id="contact" className="justify-content-center pr-lg-3 mb-3 mb-lg-5">
@@ -27,7 +31,7 @@ const Contact = ({ observer }) => {
           xs={12}
           sm={10}
           md={6}
-          className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0 hidden px-0"
+          className="contact__left_up d-flex flex-column justify-content-center align-items-center pb-3 mb-4 pb-lg-0 mb-lg-0 hidden px-2 px-sm-0"
         >
           <h1 className="text-center mb-0">Contact Me!</h1>
           <div className="img-wrapper">
@@ -38,7 +42,12 @@ const Contact = ({ observer }) => {
             />
           </div>
         </Col>
-        <Col xs={12} sm={10} md={6} className="contact__right_down px-0">
+        <Col
+          xs={12}
+          sm={10}
+          md={6}
+          className="contact__right_down px-2 px-sm-0"
+        >
           <form ref={form} onSubmit={sendEmail}>
             <div className="group hidden">
               <input type="text" name="user_name" placeholder="Name" required />
