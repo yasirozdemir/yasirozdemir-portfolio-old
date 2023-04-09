@@ -66,7 +66,10 @@ const AnimatedRoutes = () => {
             </>
           }
         />
-        <Route path="*" element={<h2>404 Page Not Found!</h2>} />
+        <Route
+          path="*"
+          element={<h2 className="text-center mt-5">404 Page Not Found :(</h2>}
+        />
       </Routes>
     </AnimatePresence>
   );
