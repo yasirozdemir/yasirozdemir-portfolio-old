@@ -8,7 +8,7 @@ const About = ({ observer }) => {
   return (
     <Container id="about" className="my-5 py-0">
       <Row className="justify-content-center">
-        <Col xs={12} className="about_col_up mt-0 mb-4">
+        <Col xs={12} className="about_col_up mt-5 mb-4">
           <h1 className="text-center text-md-left">About Me</h1>
           <div className="about-me-par">
             <p>Hi, there! It's Muhammed Yasir 🧑‍💻</p>
