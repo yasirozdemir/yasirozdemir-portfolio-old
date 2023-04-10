@@ -19,9 +19,6 @@ body {
   font-family: var(--primary-font) !important;
   color: var(--primary-text-color) !important;
   background-color: var(--primary-bg-color) !important;
-}
-
-#root {
   overflow-x: hidden;
 }
 
@@ -35,4 +32,10 @@ a {
 #projects h1 {
   font-weight: 600;
   margin-block-end: 1rem;
+}
+
+#about,
+#contact,
+#projects {
+  overflow-x: hidden;
 }
