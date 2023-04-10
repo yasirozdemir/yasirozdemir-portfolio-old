@@ -70,6 +70,11 @@
   overflow: hidden;
   width: 26px;
   height: 26px;
+  transition: all 300ms ease;
+}
+
+#projects .project-card:hover div:nth-child(1) div {
+  transform: scale(1.2);
 }
 
 #projects .project-card div:nth-child(2) {
