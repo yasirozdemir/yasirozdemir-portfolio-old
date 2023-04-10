@@ -19,7 +19,9 @@ body {
   font-family: var(--primary-font) !important;
   color: var(--primary-text-color) !important;
   background-color: var(--primary-bg-color) !important;
-  user-select: none;
+}
+
+#root {
   overflow-x: hidden;
 }
 
