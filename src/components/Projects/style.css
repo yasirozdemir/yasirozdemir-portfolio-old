@@ -11,7 +11,7 @@
   margin-block: 1rem;
 }
 
-#projects a {
+#projects a:not(.project-link) {
   padding: 0.15rem 0.6rem;
   border: 2px solid var(--primary-text-color);
   border-radius: 0.3rem;
@@ -54,6 +54,24 @@
   color: var(--secondary-bg-color);
 }
 
+#projects .project-card div:nth-child(1) {
+  position: relative;
+}
+
+#projects .project-card div:nth-child(1) div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color);
+  overflow: hidden;
+  width: 26px;
+  height: 26px;
+}
+
 #projects .project-card div:nth-child(2) {
   padding: 0.5rem 1rem;
   flex-grow: 1;
@@ -64,6 +82,9 @@
   gap: 0.5rem;
   padding-inline: 1rem;
   padding-block-end: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tool-badge {
@@ -95,4 +116,24 @@
 
 .tool-badge.javascript {
   background-color: rgb(208, 178, 30, 0.5);
+}
+
+.tool-badge.typescript {
+  background-color: rgb(45, 121, 199, 0.5);
+}
+
+.tool-badge.express {
+  background-color: rgb(251, 251, 251, 0.5);
+}
+
+.tool-badge.node {
+  background-color: rgb(128, 189, 1, 0.5);
+}
+
+.tool-badge.mongodb {
+  background-color: rgb(67, 153, 52, 0.5);
+}
+
+.tool-badge.postgresql {
+  background-color: rgb(48, 96, 145, 0.5);
 }
