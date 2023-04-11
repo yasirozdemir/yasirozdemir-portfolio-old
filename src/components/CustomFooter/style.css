@@ -1,0 +1,28 @@
+.footer-row {
+  border-block-start: solid 1px rgba(173, 173, 173, 0.5);
+  fill: rgb(173, 173, 173);
+}
+
+.footer-row p {
+  text-align: center;
+}
+
+.footer-row span {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 0.6rem;
+}
+
+.footer-row a {
+  transition: all 250ms ease;
+}
+
+.footer-row a:hover {
+  fill: var(--primary-text-color);
+}
+
+.footer-row small {
+  color: rgb(173, 173, 173);
+}
