@@ -13,7 +13,7 @@ const Projects = ({ observer }) => {
           <h1 className="text-center text-md-left">Projects</h1>
           <p>
             I'm currently working on polishing up more of my projects, you can
-            have a look at the repositories on GitHub
+            have a look at all the repositories on GitHub
           </p>
           <div className="links justify-content-center justify-content-md-start">
             <a

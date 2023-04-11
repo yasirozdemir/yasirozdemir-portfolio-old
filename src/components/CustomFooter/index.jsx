@@ -9,7 +9,7 @@ const CustomFooter = () => {
       >
         <p className="mb-1 text-center">A fancy quote will show up here :D</p>
         <small style={{ color: "rgb(173, 173, 173" }}>
-          2022 © Muhammed Yasir Ozdemir
+          2023 © Muhammed Yasir Ozdemir
         </small>
       </Row>
     </Container>
