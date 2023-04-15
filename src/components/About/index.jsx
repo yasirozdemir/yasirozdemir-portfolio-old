@@ -6,7 +6,7 @@ const About = ({ observer }) => {
   skillBadges.forEach((el) => observer.observe(el));
 
   return (
-    <Container id="about" className="my-5 py-0">
+    <Container id="about" className="my-lg-5 py-0">
       <Row className="justify-content-center">
         <Col xs={12} className="about_col_up mt-5 mb-4">
           <h1 className="text-center text-md-left">About Me</h1>

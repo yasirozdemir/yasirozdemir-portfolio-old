@@ -50,7 +50,7 @@ const Contact = ({ observer }) => {
 
   return (
     <>
-      <Container className="pt-5">
+      <Container className="pt-lg-5">
         <Row
           id="contact"
           className="justify-content-center pr-lg-3 mb-4 mb-lg-5"
@@ -70,12 +70,7 @@ const Contact = ({ observer }) => {
               />
             </div>
           </Col>
-          <Col
-            xs={12}
-            sm={10}
-            md={6}
-            className="contact__right_down px-2 px-sm-0"
-          >
+          <Col xs={12} sm={10} md={6} className="contact__right_down px-sm-0">
             <form ref={form} onSubmit={sendEmail}>
               <div className="group hidden">
                 <input
