@@ -7,7 +7,7 @@ const CustomFooter = () => {
       <Row className="footer-row flex-column justify-content-center align-items-center py-3">
         {/* <p className="mb-1">A fancy quote might show up here</p> */}
         <span>
-          <small>2023 © Muhammed Yasir Ozdemir</small>
+          <small className="text-center">2023 © Muhammed Yasir Ozdemir</small>
           <small className="d-none d-sm-inline">•</small>
           <span>
             <a
