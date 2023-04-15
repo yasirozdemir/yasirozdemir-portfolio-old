@@ -24,6 +24,7 @@ body {
 
 #root {
   overflow-x: hidden;
+  user-select: none;
 }
 
 a {
@@ -36,4 +37,10 @@ a {
 #projects h1 {
   font-weight: 600;
   margin-block-end: 1rem;
+}
+
+#about,
+#contact,
+#projects {
+  overflow-x: hidden;
 }
