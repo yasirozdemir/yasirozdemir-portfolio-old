@@ -7,7 +7,7 @@ const Projects = ({ observer }) => {
   projects.forEach((el) => observer.observe(el));
 
   return (
-    <Container id="projects" className="my-5">
+    <Container id="projects" className="mb-5">
       <Row>
         <Col xs={12}>
           <h1 className="text-center text-md-left">Projects</h1>
