@@ -90,13 +90,11 @@
     left: 0;
     background-color: rgb(255, 255, 255, 0.4);
     opacity: 0;
-    transform: translateY(-100%);
     transition: all 800ms ease;
     color: var(--secondary-bg-color);
   }
 
   #projects .project-card:hover div:nth-child(1) div {
-    transform: translateY(0%);
     opacity: 1;
   }
 }
