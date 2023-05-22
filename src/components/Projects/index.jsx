@@ -33,6 +33,22 @@ const Projects = ({ observer }) => {
         md={3}
       >
         <ProjectCard
+          ghLink="https://github.com/yasirozdemir/capstone-project-fe"
+          imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684784752/portfolio/projects/11_wzqban.png"
+          title="What ai Movie"
+          description="What ai Movie is a web app that users can search for movies depending on their feeling, thoughts or desires."
+          toolsArray={[
+            "react",
+            "redux",
+            "bootstrap",
+            "css",
+            "express",
+            "typescript",
+            "mongoDB",
+            "postman",
+          ]}
+        />
+        <ProjectCard
           ghLink="https://github.com/pappkartoni/U2-BW-Deezify"
           imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/linkedin_pexq2v.jpg"
           title="LinkedIn Clone"

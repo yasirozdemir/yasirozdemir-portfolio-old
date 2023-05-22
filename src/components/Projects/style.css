@@ -108,7 +108,7 @@
   gap: 0.5rem;
   padding-inline: 1rem;
   padding-block-end: 0.75rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -156,10 +156,14 @@
   background-color: rgb(128, 189, 1, 0.5);
 }
 
-.tool-badge.mongodb {
+.tool-badge.mongoDB {
   background-color: rgb(67, 153, 52, 0.5);
 }
 
 .tool-badge.postgresql {
   background-color: rgb(48, 96, 145, 0.5);
+}
+
+.tool-badge.postman {
+  background-color: rgba(253, 108, 53, 0.5);
 }

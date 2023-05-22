@@ -13,15 +13,14 @@ const About = ({ observer }) => {
           <div className="about-me-par">
             <p>Hi, there! It's Muhammed Yasir 🧑‍💻</p>
             <p>
-              I was born and grow up in Turkey. I'm super interested in aviation
-              & space 🚀 I love to travel and meet people that has different
-              cultural backgrounds from all around the world 🌎 I'm also a cat
-              father, and love all the animals 🐱
-            </p>
-            <p>
-              I'm a full-stack developer, an amateur mobile photographer, and a
-              full time learner 💻 I like to write, and trying to improve my
-              writing skills, I'm publishing some of my essays on Medium ✏️
+              I am a young full-stack web developer with diverse international
+              experience, an interest in technology, and a passion for
+              continuous learning. I have recently completed EPICODE's
+              full-stack developer boot camp that helped me develop a range of
+              skills in web development, including TypeScript, React, Express,
+              and Node.js. Currently, I am looking for a job as a full-stack
+              developer in a dynamic and innovative company where I can keep
+              enhancing my soft & hard skills, and make an impact.
             </p>
           </div>
           <div className="links justify-content-center justify-content-md-start">
