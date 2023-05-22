@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import "./style.css";
 import { easeOut, motion as m } from "framer-motion";
+import CV from "../../assets/Muhammed_Yasir_Ozdemir_CV.pdf";
 
 const WelcomePage = () => {
   return (
@@ -22,7 +23,9 @@ const WelcomePage = () => {
                 animate={{ x: "0%", opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5, ease: easeOut }}
               >
-                <a href="/CV">Resume</a>
+                <a href={CV} target="_blank" rel="noreferrer noopener">
+                  Resume
+                </a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}

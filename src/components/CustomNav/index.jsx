@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./style.css";
 import { useEffect, useState } from "react";
+import CV from "../../assets/Muhammed_Yasir_Ozdemir_CV.pdf";
 
 const CustomNav = ({ viewport }) => {
   const [scroll, setScroll] = useState({
@@ -45,7 +46,12 @@ const CustomNav = ({ viewport }) => {
               <a href="#about" className="nav-link">
                 About
               </a>
-              <a href="/CV" className="nav-link">
+              <a
+                href={CV}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="nav-link"
+              >
                 Resume
               </a>
               <a href="#projects" className="nav-link">
