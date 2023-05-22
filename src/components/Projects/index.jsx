@@ -34,21 +34,21 @@ const Projects = ({ observer }) => {
       >
         <ProjectCard
           ghLink="https://github.com/pappkartoni/U2-BW-Deezify"
-          imgSrc="https://media.licdn.com/dms/image/D4D22AQG9J2dYwO6b8A/feedshare-shrink_2048_1536/0/1680953358932?e=1683763200&v=beta&t=h8P3MhVFp3x8znRxxAIlc17GgF3BvSc4VOPe49COD1c"
+          imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/linkedin_pexq2v.jpg"
           title="LinkedIn Clone"
           description="A clone that users can create their profiles, add experiences, and see what others posted."
           toolsArray={["react", "redux", "bootstrap", "css"]}
         />
         <ProjectCard
           ghLink="https://github.com/pappkartoni/U2-BW-Deezify"
-          imgSrc="https://media.licdn.com/dms/image/D4D22AQGaCX1YyyS93A/feedshare-shrink_2048_1536/0/1680159831974?e=1683763200&v=beta&t=0r5HcjNEng5ksRnk-ExHeKggOeEl8tea8YjnFrdpGGc"
+          imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/spotify_fd2uks.jpg"
           title="Spotify Clone"
           description="A clone that users can play music, have a look at the albums and artist."
           toolsArray={["html", "css", "javascript", "bootstrap"]}
         />
         <ProjectCard
           ghLink="https://github.com/Flovedev/U1-W4-BuildWeek"
-          imgSrc="https://media.licdn.com/dms/image/C4D22AQGlDhx_vNY-7A/feedshare-shrink_2048_1536/0/1671395931002?e=1683763200&v=beta&t=n35obbg6yQNPq99Cw-eT6k3jRAHLuStcZXakbIlJTZE"
+          imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/epicode_rio1gr.jpg"
           title="Epicode Benchmark Clone"
           description="Epicode's benchmark webpage. It's basically a quiz app with 10 questions, a timer, and a result page."
           toolsArray={["html", "css", "javascript"]}
