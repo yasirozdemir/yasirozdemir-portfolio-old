@@ -4,30 +4,30 @@ import { useEffect, useState } from "react";
 import CV from "../../assets/Muhammed_Yasir_Ozdemir_CV.pdf";
 
 const CustomNav = ({ viewport }) => {
-  const [scroll, setScroll] = useState({
-    y: 0,
-    prevY: 0,
-  });
+  // const [scroll, setScroll] = useState({
+  //   y: 0,
+  //   prevY: 0,
+  // });
   const [showNav, setShowNav] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScroll((prevState) => {
-        return {
-          y: window.scrollY,
-          prevY: prevState.y,
-        };
-      });
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScroll((prevState) => {
+  //       return {
+  //         y: window.scrollY,
+  //         prevY: prevState.y,
+  //       };
+  //     });
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  useEffect(() => {
-    if (scroll.prevY > scroll.y) setShowNav(true);
-    else if (scroll.prevY === scroll.y) return;
-    else setShowNav(false);
-  }, [scroll]);
+  // useEffect(() => {
+  //   if (scroll.prevY > scroll.y) setShowNav(true);
+  //   else if (scroll.prevY === scroll.y) return;
+  //   else setShowNav(false);
+  // }, [scroll]);
 
   return (
     <div className="sticky-top">
