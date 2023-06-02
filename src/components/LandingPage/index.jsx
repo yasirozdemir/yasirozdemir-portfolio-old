@@ -14,14 +14,14 @@ const WelcomePage = () => {
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.3, duration: 0.5, ease: easeOut }}
               >
                 <a href="#about">About</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.7, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.4, duration: 0.5, ease: easeOut }}
               >
                 <a href={CV} target="_blank" rel="noreferrer noopener">
                   Resume
@@ -30,21 +30,21 @@ const WelcomePage = () => {
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.5, duration: 0.5, ease: easeOut }}
               >
                 <a href="#projects">Projects</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.6, duration: 0.5, ease: easeOut }}
               >
                 <a href="#contact">Contact</a>
               </m.li>
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.7, duration: 0.5, ease: easeOut }}
               >
                 <a
                   href="https://www.linkedin.com/in/muhammedyasirozdemir/"
@@ -57,7 +57,7 @@ const WelcomePage = () => {
               <m.li
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5, ease: easeOut }}
+                transition={{ delay: 0.8, duration: 0.5, ease: easeOut }}
               >
                 <a
                   href="https://github.com/yasirozdemir/"
