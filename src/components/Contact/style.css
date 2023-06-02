@@ -30,12 +30,6 @@
   }
 }
 
-/* @media (max-width: 991px) {
-  #contact .contact__left_up {
-    border-block-end: 2px solid var(--primary-text-color);
-  }
-} */
-
 #contact form .group {
   display: flex;
   flex-direction: column;
@@ -54,10 +48,13 @@ textarea {
   color: inherit;
   -webkit-backdrop-filter: opacity(20%);
   border: transparent;
+  transition: 300ms;
 }
 
 #contact form .group input:focus,
-textarea:focus {
+textarea:focus,
+#contact form .group input:hover,
+textarea:hover {
   background-color: var(--focus-bg);
 }
 

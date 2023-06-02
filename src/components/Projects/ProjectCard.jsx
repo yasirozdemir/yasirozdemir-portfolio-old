@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 const ProjectCard = ({ ghLink, imgSrc, title, description, toolsArray }) => {
   return (
     <Col className="hidden">
-      <div className="project-card">
-        <div>
-          <a
-            href={ghLink}
-            target="_blank"
-            rel="noreferrer"
-            className="project-link"
-            aria-label="View on GitHub!"
-          >
+      <a
+        href={ghLink}
+        target="_blank"
+        rel="noreferrer"
+        className="project-link"
+        aria-label="View on GitHub!"
+      >
+        <div className="project-card">
+          <div>
             <div>
               <svg
                 width="28"
@@ -25,23 +25,23 @@ const ProjectCard = ({ ghLink, imgSrc, title, description, toolsArray }) => {
               </svg>
               <h5 className="m-0 d-none d-lg-block">View on GitHub!</h5>
             </div>
-          </a>
-          <img src={imgSrc} alt="project" className="w-100" />
+            <img src={imgSrc} alt="project" className="w-100" />
+          </div>
+          <div>
+            <h5 className="text-center">{title}</h5>
+            <p className="m-0">{description}</p>
+          </div>
+          <div className="badge-container">
+            {toolsArray.map((tool, index) => {
+              return (
+                <span key={index} className={`tool-badge ${tool}`}>
+                  {tool?.charAt(0).toUpperCase() + tool?.slice(1)}
+                </span>
+              );
+            })}
+          </div>
         </div>
-        <div>
-          <h5 className="text-center">{title}</h5>
-          <p className="m-0">{description}</p>
-        </div>
-        <div className="badge-container">
-          {toolsArray.map((tool, index) => {
-            return (
-              <span key={index} className={`tool-badge ${tool}`}>
-                {tool?.charAt(0).toUpperCase() + tool?.slice(1)}
-              </span>
-            );
-          })}
-        </div>
-      </div>
+      </a>
     </Col>
   );
 };
