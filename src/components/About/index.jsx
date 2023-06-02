@@ -11,7 +11,6 @@ const About = ({ observer }) => {
         <Col xs={12} className="about_col_up mt-5 mb-4">
           <h1 className="text-center text-md-left">About Me</h1>
           <div className="about-me-par">
-              developer in a dynamic and innovative company where I can keep
             <p className="text-justify" style={{ textIndent: "2rem" }}>
               Hi, there! It's Muhammed Yasir 🧑‍💻 I am a young full-stack web
               developer with diverse international experience, an interest in
