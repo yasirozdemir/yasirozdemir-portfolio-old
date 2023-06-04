@@ -49,7 +49,7 @@ const Projects = ({ observer }) => {
           ]}
         />
         <ProjectCard
-          ghLink="https://github.com/pappkartoni/U2-BW-Deezify"
+          ghLink="https://github.com/yasirozdemir/u3-bw-linkedin"
           imgSrc="https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/linkedin_pexq2v.jpg"
           title="LinkedIn Clone"
           description="A clone that users can create their profiles, add experiences, and see what others posted."
