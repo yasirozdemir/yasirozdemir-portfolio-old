@@ -3,6 +3,10 @@
   fill: rgb(173, 173, 173);
 }
 
+.footer-row svg {
+  fill: inherit;
+}
+
 .footer-row p {
   text-align: center;
 }
