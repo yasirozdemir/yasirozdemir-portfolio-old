@@ -5,9 +5,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
 function App() {
-  const imgs = [...document.getElementsByTagName("img")];
   useEffect(() => {
-    imgs?.forEach((el) => {
+    [...document.getElementsByTagName("img")]?.forEach((el) => {
       el.ondragstart = function () {
         return false;
       };
