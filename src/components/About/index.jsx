@@ -12,15 +12,23 @@ const About = ({ observer }) => {
           <h1 className="text-center text-md-left">About Me</h1>
           <div className="about-me-par">
             <p className="text-justify" style={{ textIndent: "2rem" }}>
-              Hi, there! It's Muhammed Yasir 🧑‍💻 I am a young full-stack web
-              developer with diverse international experience, an interest in
-              technology, and a passion for continuous learning. I have recently
-              completed EPICODE's full-stack developer boot camp that helped me
-              develop a range of skills in web development, including
-              TypeScript, React, Express, and Node.js. Currently, I am looking
-              for a job as a full-stack developer in a dynamic and innovative
-              company where I can keep enhancing my soft & hard skills, and make
-              an impact.
+              As a full-stack web developer, I enjoy creating innovative and
+              impactful solutions using cutting-edge technologies. I have
+              recently graduated from EPICODE, a rigorous and intensive
+              full-stack developer boot camp that taught me how to use
+              TypeScript, React, Node.js, Express, and MongoDB to build scalable
+              and user-friendly web applications.
+            </p>
+            <p className="text-justify" style={{ textIndent: "2rem" }}>
+              I also have diverse international experience, having worked at
+              Great Wolf Lodge in the United States, an Erasmus+ project
+              participation in France, and online digital mentorship at Rome
+              Business School. Through these opportunities, I developed my
+              teamwork, communication, and intercultural skills, while learning
+              from colleagues with different backgrounds and perspectives. I am
+              looking for a job as a full-stack developer in a dynamic and
+              innovative company where I can keep enhancing my skills,
+              contribute to exciting projects, and make a difference.
             </p>
           </div>
           <div className="links justify-content-center justify-content-md-start">
