@@ -26,11 +26,23 @@ const Projects = ({ observer }) => {
           </div>
         </Col>
       </Row>
+      <Row>
+        <Col className="d-flex justify-content-center">
+          <iframe
+            className="w-100"
+            style={{ aspectRatio: "16/9" }}
+            src="https://www.youtube.com/embed/_rA3CapbmYA?si=4lq6PjnzEtQRmTnv"
+            title="What ai Movie Presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Col>
+      </Row>
       <Row
         className="projects-row mt-3 justify-content-center"
         xs={1}
-        sm={2}
-        md={3}
+        md={2}
+        lg={3}
       >
         <ProjectCard
           ghLink="https://github.com/yasirozdemir/capstone-project-fe"
