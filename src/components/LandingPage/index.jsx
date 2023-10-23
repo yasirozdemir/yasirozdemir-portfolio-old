@@ -47,7 +47,7 @@ const WelcomePage = () => {
                 transition={{ delay: 0.7, duration: 0.5, ease: easeOut }}
               >
                 <a
-                  href="https://www.linkedin.com/in/muhammedyasirozdemir/"
+                  href="https://www.linkedin.com/in/yasirozdemir/"
                   target="_blank"
                   rel="noreferrer"
                 >

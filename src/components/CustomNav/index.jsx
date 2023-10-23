@@ -61,7 +61,7 @@ const CustomNav = ({ viewport }) => {
                 Contact
               </a>
               <a
-                href="https://www.linkedin.com/in/muhammedyasirozdemir/"
+                href="https://www.linkedin.com/in/yasirozdemir/"
                 target="_blank"
                 rel="noreferrer"
                 className="nav-link"
