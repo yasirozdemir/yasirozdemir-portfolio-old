@@ -1,7 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./style.css";
 import { useEffect, useState } from "react";
-import CV from "../../assets/Muhammed_Yasir_Ozdemir_CV.pdf";
+import CV from "../../assets/M_Yasir_Ozdemir_CV.pdf";
 
 const CustomNav = ({ viewport }) => {
   // const [scroll, setScroll] = useState({
