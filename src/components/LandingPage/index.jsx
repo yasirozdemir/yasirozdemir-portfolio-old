@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import "./style.css";
 import { easeOut, motion as m } from "framer-motion";
-import CV from "../../assets/M_Yasir_Ozdemir_CV.pdf";
+import CV from "../../assets/M_Yasir_Ozdemir_CV_EN.pdf";
 
 const WelcomePage = () => {
   return (
